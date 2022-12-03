@@ -1,1 +1,1 @@
-int primo (int, int);
+bool scm (int a, int b);
