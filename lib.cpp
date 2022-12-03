@@ -1,11 +1,11 @@
-int primo (int n, int m) {
-  bool x=true;
-  if (m!=1) {
-    if ((n % m) !=0) {
-      m--;
-      x= primo(n, m);
-    } else {
-      x = false;
+#include "lib.h"
+bool numprimo(int a, int i){
+    if(a % i == 0){
+        if(a == i){
+            return true;
+        }
+        else{
+            return false;
+        }
     }
-    return x;
-  }
+    numprimo(a, i + 1);}
